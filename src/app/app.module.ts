@@ -14,7 +14,8 @@ import { AboutAutorComponent } from './components/about-autor/about-autor.compon
 import { MySolutionComponent } from './components/my-solution/my-solution.component';
 import { TaskComponent } from './components/task/task.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
-
+import { myRouting } from './routes/BasicAppRoutes';
+ 
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AddProductComponent } from './components/add-product/add-product.compon
     TaskComponent,
     AddProductComponent
   ],
-  imports: [
+  imports: [ 
+    myRouting,
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
     BrowserModule

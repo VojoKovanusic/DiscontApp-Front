@@ -1,6 +1,7 @@
 import { HomPageComponent } from "../components/hom-page/hom-page.component";
 import { Routes, RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
+
 import { HowRunComponent } from "../components/how-run/how-run.component";
 import { AboutAutorComponent } from "../components/about-autor/about-autor.component";
 import { AddProductComponent } from "../components/add-product/add-product.component";
