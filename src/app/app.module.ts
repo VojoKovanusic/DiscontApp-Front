@@ -21,6 +21,7 @@ import { PopularPurchaseComponent } from './discont-components/popular-purchase/
 import { ProductByIdComponent } from './discont-components/product-by-id/product-by-id.component';
 import { PurchaseByUsernameComponent } from './discont-components/purchase-by-username/purchase-by-username.component';
 import { NavbarComponent } from './basic-components/navbar/navbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -40,7 +41,9 @@ import { NavbarComponent } from './basic-components/navbar/navbar.component';
     myRouting,
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [PopularPurchaseService,ProductService,PurchaseService],
   bootstrap: [AppComponent]

@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-like',
   templateUrl: './like.component.html',
   styleUrls: ['./like.component.scss']
 })
-export class LikeComponent implements OnInit {
+export class LikeComponent  {
+  @Input('like') like: boolean;
+  private brojac = 0;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  naKlikLike() {
+    this.brojac += 1;
 
+  }
+  naKlikUnLike() {
+    this.brojac = this.brojac - 1;
+    console.log(this.brojac);
+  }
 }
