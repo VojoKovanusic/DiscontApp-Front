@@ -22,6 +22,7 @@ export class AllProductsComponent implements OnInit {
         error => { console.log(error) })
   }
   deleteProduct(product) {
+    console.log("PIPAAAAAAAAAAAA")
     this.service.deleteProduct(product.id).subscribe(data => {
       this.allProducts.splice(this.allProducts.indexOf(product), 1);
     }, (error) => console.log(error));

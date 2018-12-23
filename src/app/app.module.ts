@@ -12,7 +12,7 @@ import { HomPageComponent } from './basic-components/hom-page/hom-page.component
 import { HowRunComponent } from './basic-components/how-run/how-run.component';
 import { AboutAutorComponent } from './basic-components/about-autor/about-autor.component';
 import { TaskComponent } from './basic-components/task/task.component';
-import { AddProductComponent } from './basic-components/discont-components/add-product/add-product.component';
+import { AddProductComponent } from './discont-components/add-product/add-product.component';
 import { MySolutionComponent } from './discont-components/my-solution/my-solution.component';
 import { AllProductsComponent } from './discont-components/all-products/all-products.component';
 import { LikeComponent } from './discont-components/like/like.component';
@@ -35,7 +35,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutAutorComponent, 
     TaskComponent,
     AddProductComponent
-    ,MySolutionComponent, AllProductsComponent, LikeComponent, ListPurchaseComponent, PopularPurchaseComponent, ProductByIdComponent, PurchaseByUsernameComponent
+    ,MySolutionComponent, 
+    AllProductsComponent, 
+    LikeComponent, 
+    ListPurchaseComponent, 
+    PopularPurchaseComponent, 
+    ProductByIdComponent, 
+    PurchaseByUsernameComponent
   ],
   imports: [ 
     myRouting,

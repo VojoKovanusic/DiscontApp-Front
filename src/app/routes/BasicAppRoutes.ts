@@ -1,11 +1,12 @@
 import { Routes, RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 import { HomPageComponent } from "../basic-components/hom-page/hom-page.component";
-import { AddProductComponent } from "../basic-components/discont-components/add-product/add-product.component";
+
 import { TaskComponent } from "../basic-components/task/task.component";
 import { MySolutionComponent } from "../discont-components/my-solution/my-solution.component";
 import { HowRunComponent } from "../basic-components/how-run/how-run.component";
 import { AboutAutorComponent } from "../basic-components/about-autor/about-autor.component";
+import { AddProductComponent } from "../discont-components/add-product/add-product.component";
 
 
 
