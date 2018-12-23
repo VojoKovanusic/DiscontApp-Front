@@ -9,6 +9,11 @@ import { HomPageComponent } from './components/hom-page/hom-page.component';
 import { PopularPurchaseService } from './service/popular-purchase.service';
 import { ProductService } from './service/product.service';
 import { PurchaseService } from './service/purchase.service';
+import { HowRunComponent } from './components/how-run/how-run.component';
+import { AboutAutorComponent } from './components/about-autor/about-autor.component';
+import { MySolutionComponent } from './components/my-solution/my-solution.component';
+import { TaskComponent } from './components/task/task.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
 
 
 @NgModule({
@@ -16,7 +21,12 @@ import { PurchaseService } from './service/purchase.service';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HomPageComponent
+    HomPageComponent,
+    HowRunComponent,
+    AboutAutorComponent,
+    MySolutionComponent,
+    TaskComponent,
+    AddProductComponent
   ],
   imports: [
     HttpClientModule,
