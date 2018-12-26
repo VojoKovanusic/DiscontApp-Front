@@ -15,7 +15,7 @@ export class AddProductComponent  implements OnInit {
       this.product=this.productService.getter();  
     }
     processFormOnSubmit(){
-      console.log("usao-processFormOnSubmit()-create")
+     
       if(this.product.id==undefined){
         this.productService.addProduct(this.product).subscribe(
           (user)=>

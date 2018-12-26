@@ -24,7 +24,7 @@ export class ListPurchaseComponent {
     return this.service.peopleWhoPreviouslyPurchasedProduct(this.id)
       .subscribe(purchases => {
         this.purchases = purchases
-        console.log("  this.purchases"+this.purchases)
+        console.log("  this.purchases "+this.purchases)
       },
       error => { console.log(error) });
   }

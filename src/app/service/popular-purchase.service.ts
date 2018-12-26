@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class PopularPurchaseService {
 
-  private baseUrl: string = 'http://localhost:8090/discont.com/recent-purchases/';
+  private baseUrl: string = 'http://localhost:8090/api.discont.com/recent-purchases/';
   
   constructor(private http: HttpClient) { }
 

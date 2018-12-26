@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProductService implements OnInit {
 
   private baseUrl: string = 'http://localhost:8090/discont.com/products/';
-  private productUrl: string = 'http://localhost:8090/discont.com/product/';
+  private CRUDproductUrl: string = 'http://localhost:8090/api.discont.com/product/';
 
   private product: Product;
   constructor(private httpClient: HttpClient) { }
@@ -28,14 +28,14 @@ export class ProductService implements OnInit {
   }
 
   deleteProduct(id: number) {
-    return this.httpClient.delete(this.productUrl + id)
+    return this.httpClient.delete(this.CRUDproductUrl + id)
   }
 
   updateProduct(product: Product) { 
-    return this.httpClient.put(this.productUrl + product.id, product)
+    return this.httpClient.put(this.CRUDproductUrl + product.id, product)
   }
   addProduct(product: Product) {
-    return this.httpClient.post(this.productUrl, product)
+    return this.httpClient.post(this.CRUDproductUrl, product)
   }
 
 
