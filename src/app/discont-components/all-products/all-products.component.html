@@ -28,7 +28,16 @@
               <app-like></app-like>
             </td>
             <td><button type="button" class="btn btn-primary"(click)="updateProduct(product)" >Edit</button> 
-             <button type="button" class="btn btn-danger" (click)="deleteProduct(product)">Delete</button></td>
+         
+
+             <button type="button" 
+              (click)="deleteProduct(product)"  
+              class="btn btn-sm btn-primary waves-effect waves-light" 
+              data-toggle="tooltip" 
+              data-placement="top" 
+              title="delete">X
+              </button> </td>
+
           </tr>
         </tbody>
 
